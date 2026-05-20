@@ -1,86 +1,53 @@
-# 🎮 TETRIS PRO - 高级俄罗斯方块
+# TETRIS PRO
 
-![Version](https://img.shields.io/badge/version-1.0-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
+一款功能丰富的俄罗斯方块游戏，支持多种游戏模式。
 
-一款具有现代设计、高级特效、多种游戏模式和支持排行榜的俄罗斯方块游戏。
+## 🎮 游戏模式
 
-## 🌟 特色功能
+- **经典模式** - 传统俄罗斯方块体验
+- **计时模式** - 90秒内获得最高分
+- **竞速模式** - 自选时间，消除指定行数获胜
+- **Boss模式** - 对抗会自动攻击的Boss
+- **AI对战** - 与智能AI同屏对战
 
-### 🎨 视觉效果
-- 赛博朋克风格 UI 设计
-- 动态粒子特效
-- 流畅动画效果
+## 🌟 功能特性
+
+- 7种难度等级
+- 多种方块主题
+- 粒子特效
 - 星空背景
+- 分数排行榜
+- 键盘/触摸控制
 
-### 🎯 游戏模式
-| 模式 | 说明 |
-|------|------|
-| 🏃 马拉松 | 经典模式，追求最高分 |
-| ⏱️ 竞速 | 40行竞速挑战 |
-| 👾 BOSS战 | BOSS血条压力模式 |
-| ⚔️ 对战 | 双人对战 |
-| 🧘 禅定 | 无道具专注模式 |
+## 🚀 部署到 GitHub Pages
 
-### 🎁 道具系统
-- 💣 炸弹 - 清除周围方块
-- ⚡ 闪电 - 清除3行
-- ⬆️ 上行 - 清除底部3行
-- 🛡️ 护盾 - 抵挡一次攻击
-- 🎨 清色 - 清除同色方块
-- 🌋 地震 - 清除底部方块
+### 方法一：自动部署（推荐）
 
-### 📊 排行榜
-- 自动记录游戏分数
-- 按模式分类统计
-- 本地存储，持久保存
+1. 进入仓库 Settings → Pages
+2. Source 选择 "Deploy from a branch"
+3. Branch 选择 `master`，文件夹选 `/ (root)`
+4. 点击 Save
+5. 等待1-2分钟，访问 `https://aigame-james.github.io/tetris-pro/`
 
-## 🎮 操作说明
+### 方法二：使用 Actions 自动部署
+
+仓库已配置自动部署，每次推送到 master 分支会自动更新 GitHub Pages。
+
+## 🎯 操作说明
 
 | 按键 | 功能 |
 |------|------|
 | ← → | 左右移动 |
-| ↑ | 旋转 |
 | ↓ | 加速下落 |
-| 空格 | 硬降（直接落下）|
-| C | 暂存方块 |
-| P | 暂停/继续 |
-| 1-6 | 使用道具 |
+| ↑ | 旋转 |
+| 空格 | 硬降 |
+| P | 暂停 |
+| M | 静音 |
 
-## 🚀 快速开始
+## 📱 移动端
 
-### 在线游玩
-访问: **https://AIGAME-James.github.io/tetris-pro**
+触摸控制已优化，支持手机和平板游玩。
 
-### 本地运行
-```bash
-# 克隆仓库
-git clone https://github.com/AIGAME-James/tetris-pro.git
+## 📄 License
 
-# 本地预览
-cd tetris-pro
-python -m http.server 8080
-# 访问 http://localhost:8080
-```
-
-## 📦 部署到 GitHub Pages
-
-1. 创建新仓库 `tetris-pro`
-2. 推送代码到 `master` 分支
-3. 启用 GitHub Pages（Settings > Pages > Source: master)
-4. 等待 1-2 分钟即可访问
-
-## 🛠️ 技术栈
-
-- HTML5 Canvas
-- Vanilla JavaScript
-- CSS3 动画
-- LocalStorage 数据存储
-
-## 📝 许可证
-
-MIT License - 自由使用和修改
-
----
-
-**Made with ❤️ by AIGAME-James**
+MIT
